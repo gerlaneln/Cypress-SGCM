@@ -5,9 +5,9 @@ describe('admin', () => {
 
         cy.visit('https://localhost:4200/login');
 
-        cy.get('#nomeUsuario').type('admin');
-        cy.get('#senhaUsuario').type('admin');
-        cy.get('#botaoLogin').click();
+        cy.get('[name="nomeUsuario"]').type('admin');
+        cy.get('[name="senha"]').type('admin');
+        cy.get('[type="submit"]').click();
 
     });
 
@@ -57,12 +57,27 @@ describe('admin', () => {
 
     //     cy.get('[name="profissional"]').select('James Doe');
     //     cy.get('[name="data"]').type('2022-06-01');
-    //     cy.get('[name=hora]').select('14:00');
+    //     cy.get('[ng-reflect-name="hora"]').select('14:00');
     //     cy.get('[name="convenio"]').select('Amil');
     //     cy.get('[name=paciente]').select('Jane Doe');
 
     //     cy.get('[type="submit"]').click();
     // }) 
+
+    it('filtra atendimentos', () => {
+
+        cy.get('ul > :nth-child(1) > a').click();
+
+        cy.get('.selectProf > .ng-untouched').select('James Doe');
+        cy.get('[value="Filtrar"]').click();
+
+        cy.get('.confirmacao').click();
+        // cy.get('.chegada').click();
+
+        // cy.get('ul > :nth-child(2) > a').click();
+
+
+    });
 
 
 });
