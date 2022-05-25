@@ -1,0 +1,23 @@
+{
+  "name": "Cypress-SGCM",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerlaneln/Cypress-SGCM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerlaneln/Cypress-SGCM/issues"
+  },
+  "homepage": "https://github.com/gerlaneln/Cypress-SGCM#readme",
+  "devDependencies": {
+    "cypress": "^4.1.0"
+  }
+}
