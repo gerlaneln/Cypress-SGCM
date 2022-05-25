@@ -1,5 +1,5 @@
 {
-  "name": "Cypress-SGCM",
+  "name": "cypress-sgcm",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/gerlaneln/Cypress-SGCM#readme",
   "devDependencies": {
-    "cypress": "^4.1.0"
+    "cypress": "4.1"
   }
 }
